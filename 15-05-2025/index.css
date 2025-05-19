@@ -1,0 +1,134 @@
+
+
+/* Portfolio project using css */
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+    background-color: black;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+
+#about-me{
+    padding: 40px 20px;
+}
+
+.inner-about{
+    display: flex;
+    align-items: center;
+    padding-top: 23px;
+    gap: 25px;
+}
+
+.inner-about img{
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2)
+}
+
+#projects{
+    padding: 40px 20px;
+}
+
+.inner-projects{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.inner-projects p{
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: calc(33.333% - 20px);
+    margin-top: 10px;
+}
+
+#skills{
+    padding: 30px 20px;
+}
+.skills-inner{
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    
+}
+.skills-inner p{
+    margin-top: 15px;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    padding: 18px;
+    width: calc(33.333% - 20px);
+    border-radius: 10px;
+}
+
+#contact-form{
+    padding: 20px 20px;
+}
+
+form{
+    display: flex;
+    width: 30%;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+form input{
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: gray;
+    font-weight: 300;
+}
+form textarea{
+    border: 1px solid black;
+}
+#submit{
+    background:#333;
+    padding: 10px;
+    color: white;
+    border: none;
+}
+
+footer{
+    background: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+
+}
+
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .project-card {
+    width: 100%;
+  }
+}
